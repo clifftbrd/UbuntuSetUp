@@ -25,7 +25,7 @@ printf "$GREEN install dwm!! $NC \n"
 cd $HOME/.config/dwm-6.5
 sudo make clean install&&printf "$GREEN dwm success!! $NC \n"||printf "$RED dwm failed $NC \n"
 printf "$GREEN install dwmblocks!! $NC \n"
-cd $HOME/.config/dwmblocks
+cd $HOME/.config/dwmblocks-async
 sudo make clean install&&printf "$GREEN dwmblocks success!! $NC \n"||printf "$RED dwmblocks failed!! $NC \n"
 cd $HOME/.config/st
 sudo make clean install&&printf "$GREEN st success!! $NC \n"||printf "$RED st failed!! $NC \n"
