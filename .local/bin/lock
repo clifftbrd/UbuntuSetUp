@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+rm /tmp/screenshot.png
+scrot /tmp/screenshot.png
+convert /tmp/screenshot.png -blur 0x20 /tmp/screenshotblur.png
+convert /tmp/screenshotblur.png /home/cliff/Pictures/icons/archlinux2.png -gravity Center -geometry 1000x500+0-500 -composite -matte /tmp/screenlock.png
+i3lock -i /tmp/screenlock.png

@@ -1,0 +1,21 @@
+#!/bin/bash
+case "$1" in
+    vpn)
+       nmcli con down 'Wired connection 1'
+       nmcli radio wifi on
+       sleep 2
+       nmcli con up 'Fios-sZv2F-Guest'
+       sleep 2
+       nmcli con up ubiq;;
+    home)
+       nmcli con up 'Wired connection 1'
+       nmcli con down ubiq 
+       nmcli radio wifi off;;
+    
+    --help)
+       echo "options are \"network vpn\" or \"network home\"";;
+    *)
+       echo "options are \"network vpn\" or \"network home\"";;
+
+
+esac
