@@ -9,24 +9,17 @@ echo "export ZDOTDIR=\"\$HOME/.config/zsh\""| sudo tee /etc/zsh/zshenv
 mkdir -p ~/.cache/zsh
 touch ~/.cache/zsh/history
 git clone https://github.com/lincheney/fzf-tab-completion.git ~/.config/fzf-tab
-rsync -av ./zsh ~/.config
-rsync -av ./fontconfig ~/.config
+rsync -av ./Downloads ~/
+rsync -av ./.config ~/.config
 rsync -av ./.local ~/
-rsync -av ./vim ~/.config
+rsync -av ./vim ~/
 rsync -av ./Pictures ~/
 rsync -av ./.xinitrc ~/
-rsync -av ./dwmblocks-async ~/.config
-rsync -av ./dwm-6.5 ~/.config
-rsync -av ./st ~/.config
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P ~/Downloads
 sudo dpkg -i ~/Downloads/google-chrome-stable_current_amd64.deb
 sudo apt --fix-broken install -y
 printf "$GREEN loading packages $NC \n"
 xargs sudo apt install -y < ~/.local/bin/ubuntulist.txt && printf "$GREEN Successful pkgs $NC \n"||printf "$RED packages failed $NC \n"
-#printf "$GREEN loading sound  packages"
-#sudo pacman -S --needed - < ~/.local/bin/soundpkg.txt && printf "$GREEN Successful sound pkgs $NC \n"||printf "$RED sound packages failed $NC \n"
-#printf "$GREEN loading print packages"
-#sudo pacman -S --needed - < ~/.local/bin/printpkg.txt && printf "$GREEN Successful print pkgs $NC \n"||printf "$RED print packages failed $NC \n"
 chsh -s /bin/zsh
 printf "$GREEN install dwm!! $NC \n"
 cd $HOME/.config/dwm-6.5
