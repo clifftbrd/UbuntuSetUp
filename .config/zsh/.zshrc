@@ -110,7 +110,7 @@ source /usr/share/doc/fzf/examples/completion.zsh
 source $ZDOTDIR/auto-ls.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $ZDOTDIR/fzf-tab/fzf-tab.plugin.zsh
+source $HOME/.config/fzf-tab/zsh/fzf-zsh-completion.sh
 
 autoload -U compinit && compinit
 
