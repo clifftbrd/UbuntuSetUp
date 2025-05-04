@@ -5,7 +5,7 @@ NC='\033[0m'
 
 printf "$GREEN password to perform apt adds of needed programs $NC \n"
 sudo apt install rsync trash-cli cifs-utils zsh
-echo "export ZDOTDIR=\"\$HOME/.config/zsh\""| sudo tee /etc/zsh/zshenv
+# echo "export ZDOTDIR=\"\$HOME/.config/zsh\""| sudo tee /etc/zsh/zshenv
 mkdir -p ~/.cache/zsh
 touch ~/.cache/zsh/history
 git clone https://github.com/lincheney/fzf-tab-completion.git ~/.config/fzf-tab
