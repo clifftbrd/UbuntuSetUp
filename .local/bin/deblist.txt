@@ -8,7 +8,6 @@ font-manager
 fonts-noto-color-emoji
 fzf
 git
-google-chrome-stable
 gvfs-backends
 htop
 libnotify4
@@ -30,6 +29,7 @@ pipewire-audio
 pipewire-jack
 pipewire-pulse
 playerctl
+pulseaudio
 ranger
 rofi
 rsync

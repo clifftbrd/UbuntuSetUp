@@ -15,9 +15,9 @@ rsync -av ./.local ~/
 rsync -av ./vim ~/
 rsync -av ./Pictures ~/
 rsync -av ./.xinitrc ~/
-#[ ! -f /usr/bin/google-chrome-stable ] && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P ~/Downloads
-#[ ! -f /usr/bin/google-chrome-stable ] && sudo dpkg -i ~/Downloads/google-chrome-stable_current_amd64.deb
-#sudo apt --fix-broken install -y
+[ ! -f /usr/bin/google-chrome-stable ] && wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P ~/Downloads
+[ ! -f /usr/bin/google-chrome-stable ] && sudo dpkg -i ~/Downloads/google-chrome-stable_current_amd64.deb
+sudo apt --fix-broken install -y
 printf "$GREEN loading packages $NC \n"
 xargs sudo apt install -y < ~/.local/bin/deblist.txt && printf "$GREEN Successful pkgs $NC \n"||printf "$RED packages failed $NC \n"
 chsh -s /bin/zsh
