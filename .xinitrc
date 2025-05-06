@@ -46,9 +46,9 @@ xrandr -s 1920x1080 &
 #xrandr -s 3840x2160
 #redshift -l 40.26257:-80.18728 &
 /usr/bin/dunst &
-#/home/cliff/.fehbg &
-feh --bg-fill --randomize ~/Pictures/Wall/* &
-locked &
+$HOME/.fehbg &
+#feh --bg-fill --randomize ~/Pictures/Wall/* &
+#locked &
 dwmblocks &
 
 
