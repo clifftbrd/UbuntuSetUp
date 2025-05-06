@@ -23,11 +23,6 @@ network-manager
 notify-osd
 openssh-server
 pamixer
-pipewire
-pipewire-alsa
-pipewire-audio
-pipewire-jack
-pipewire-pulse
 playerctl
 pulseaudio
 ranger
