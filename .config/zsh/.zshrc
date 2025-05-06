@@ -43,7 +43,7 @@ export VISUAL=vim
   alias less='less -R'
   alias logout='killsession'
   alias refreshbar='pkill -SIGUSR1 dwmblocks'
-  alias mirrorlist='cat /etc/pacman.d/mirrorlist'
+#  alias mirrorlist='cat /etc/pacman.d/mirrorlist'
   alias mkdir='mkdir -p'
   alias mv='mv -i'
   alias ping='ping -c 10'
@@ -57,8 +57,8 @@ export VISUAL=vim
   alias ticker='ticker --config $HOME/.config/.ticker.yaml'
 
 #FZF related aliases
-  alias installsearch="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"  
-  alias removesearch="pacman -Qeq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rns"
+#  alias installsearch="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"  
+#  alias removesearch="pacman -Qeq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rns"
   alias vimfind='fzf --print0 | xargs -0 -o vim'
   alias svimfind='fzf --print0 | xargs -0 -o svim'
 
