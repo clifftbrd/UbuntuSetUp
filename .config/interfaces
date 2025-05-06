@@ -1,0 +1,10 @@
+  [Match]
+  Name=e*
+  Type=ether
+
+  [Network]
+  DHCP=ipv4
+  # Use this if you want to force DHCP-Registration with
+  # the MAC-Address instead of duid (DHCP Unique Identifier)
+  # This way you can pre-assign them in your DHCPD.
+  #ClientIdentifier=mac
