@@ -21,6 +21,7 @@ sudo apt --fix-broken install -y
 sudo mv /etc/network/interfaces /etc/network/interfaces.save
 sudo cp ./.config/interfaces /etc/network/
 sudo systemctl enable systemd-networkd
+cp ./.fehbg ~/
 printf "$GREEN loading packages $NC \n"
 xargs sudo apt install -y < ~/.local/bin/deblist.txt && printf "$GREEN Successful pkgs $NC \n"||printf "$RED packages failed $NC \n"
 chsh -s /bin/zsh
