@@ -27,7 +27,8 @@ git clone https://github.com/clifftbrd/UbuntuSetUp ~/
 cd ~/UbuntuSetUp
 ```
 
-## run install.sh to automatically detect OS (Ubuntu vs Debian) and perform package and configuration needed
+## run install.sh to automatically detect OS  
+## (Ubuntu/Debian/Arch) install packages and configs
 
 ```
 ./install.sh
