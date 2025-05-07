@@ -13,6 +13,8 @@ git clone https://github.com/lincheney/fzf-tab-completion.git ~/.config/fzf-tab
 rsync -av ./.local ~/
 rsync -av ./Pictures ~/
 rsync -av ./.xinitrc ~/
+rm ~/.config/zsh/.zshrc
+cp ~/.config/zsh/.zshrc.Arch ~/.config/zsh/.zshrc
 printf "$GREEN loading admin packages $NC \n"
 sudo pacman -S --needed - < ~/.local/bin/adminpkg.txt && printf "$GREEN Successful admin pkgs $NC \n"||printf "$RED admin packages failed $NC \n"
 printf "$GREEN loading sound  packages"
