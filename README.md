@@ -1,12 +1,14 @@
 # UbuntuSetUp
 
 Set up for Ubuntu, Debian, and Arch Linux 
+
 this provides a user space with dwm,dwmblocks,vim,google-chrome,st
 
 
 # Prerequisites:
 
 sudo for (user) 
+
 git (to clone repository)
 
 
