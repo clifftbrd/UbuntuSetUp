@@ -8,21 +8,21 @@
 ##sudo for (user)
 
 
-#Instructions:
+# Instructions:
 
-#clone into home directory
+# clone into home directory
 
-##git clone https://github.com/clifftbrd/UbuntuSetUp
-
-
-#cd into UbuntuSetUp
-
-##cd ~/UbuntuSetUp
+## git clone https://github.com/clifftbrd/UbuntuSetUp
 
 
-#run install.sh to automatically detect OS (Ubuntu vs Debian) and perform package and configuration needed
+# cd into UbuntuSetUp
 
-##./install.sh
+## cd ~/UbuntuSetUp
 
 
-#when complete reboot system, login, and type startx
+# run install.sh to automatically detect OS (Ubuntu vs Debian) and perform package and configuration needed
+
+## ./install.sh
+
+
+# when complete reboot system, login, and type startx
