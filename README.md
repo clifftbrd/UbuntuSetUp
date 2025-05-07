@@ -12,7 +12,9 @@ sudo for (user)
 
 ## clone into home directory
 
-```git clone https://github.com/clifftbrd/UbuntuSetUp```
+```
+git clone https://github.com/clifftbrd/UbuntuSetUp
+```
 
 
 ## cd into UbuntuSetUp
