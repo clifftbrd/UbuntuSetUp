@@ -10,17 +10,17 @@ sudo for (user)
 
 # Instructions:
 
-clone into home directory
+## clone into home directory
 
-## git clone https://github.com/clifftbrd/UbuntuSetUp
+git clone https://github.com/clifftbrd/UbuntuSetUp
 
 
-# cd into UbuntuSetUp
+## cd into UbuntuSetUp
 
 cd ~/UbuntuSetUp
 
 
-# run install.sh to automatically detect OS (Ubuntu vs Debian) and perform package and configuration needed
+## run install.sh to automatically detect OS (Ubuntu vs Debian) and perform package and configuration needed
 
 ./install.sh
 
