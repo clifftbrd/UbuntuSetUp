@@ -7,6 +7,6 @@ do
  [[ $distro =~ $distrofinal ]] && distroset=$distrofinal;
 done
 
-echo $distroset
+./$distroset"config".sh
 
 
