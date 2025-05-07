@@ -8,7 +8,7 @@ sudo pacman -S --needed base-devel zsh zsh-autosuggestions zsh-syntax-highlighti
 echo "export ZDOTDIR=\"\$HOME/.config/zsh\""| sudo tee /etc/zsh/zshenv
 mkdir -p ~/.cache/zsh
 touch ~/.cache/zsh/history
-rsync -av ./config ~/
+rsync -av ./.config ~/
 git clone https://github.com/lincheney/fzf-tab-completion.git ~/.config/fzf-tab
 rsync -av ./.local ~/
 rsync -av ./Pictures ~/
