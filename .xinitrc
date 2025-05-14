@@ -6,6 +6,7 @@
 #sysmodmap=/etc/X11/xinit/.Xmodmap
 export XSESSION_PID="$$"
 
+
 #export PATH=$PATH:$HOME/.local/bin
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
