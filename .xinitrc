@@ -57,4 +57,3 @@ while true; do
 done    
 
 exec dwm 
-#exec /usr/bin/i3 --shmlog-size=26214400
