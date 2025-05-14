@@ -1,4 +1,5 @@
 #! /bin/bash
+
 distro=$(\cat /etc/os-release | grep "^NAME")
 distrolist="Arch Ubuntu Debian"
 
